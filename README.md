@@ -108,6 +108,11 @@ and adds it to the group `sudo`. It also sets the user password to the one given
 .\CreateLinuxDistro.ps1 -INPUT_FILENAME .\focal-server-cloudimg-amd64-wsl.rootfs.tar.gz -OUTPUT_DIRNAME "$env:LOCALAPPDATA\Packages\ubuntu2004-test-1" -OUTPUT_DISTRONAME ubuntu2004-test-1 -CREATE_USER 1 -CREATE_USER_USERNAME myuser -ADD_USER_TO_GROUP 1 -ADD_USER_TO_GROUP_NAME sudo -SET_USER_AS_DEFAULT myuser
 ```
 
+# Run installed distribution
+As stated in the [official documentation](https://docs.microsoft.com/en-us/windows/wsl/wsl-config)
+to run a specific WSL2 distribution, use the following command:
+`wsl --distribution <DistributionName>`
+
 # Delete WSL2 distribution
 
 As stated in the [official documentation](https://docs.microsoft.com/en-us/windows/wsl/wsl-config)
